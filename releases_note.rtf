@@ -1,0 +1,2644 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1504\cocoasubrtf810
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\froman\fcharset0 Times-Roman;\f2\fnil\fcharset0 LucidaGrande;
+}
+{\colortbl;\red255\green255\blue255;\red217\green11\blue0;}
+{\*\expandedcolortbl;;\csgenericrgb\c85098\c4314\c0;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh17580\viewkind0
+\deftab720
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardeftab720\qc\partightenfactor0
+
+\f0\b\fs36 \cf0 rtWork
+\f1\b0\fs24 \
+
+\f0\b\fs36  (rtCPMS)
+\f1\b0\fs24 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardeftab720\qc\partightenfactor0
+
+\f0\b\fs36 \cf0 RELEASES NOTE
+\f1\b0\fs24 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardeftab720\partightenfactor0
+
+\f0 \cf0 \
+\
+\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97
+\f1 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardeftab720\partightenfactor0
+
+\f0\b\fs28 \cf2 OFFICIAL RELEASES 
+\i (FOR INTERNAL USAGE)
+\f1\i0\b0\fs24 \cf0 \
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardeftab720\partightenfactor0
+
+\f0\b \cf2 RED TEXT
+\b0  \cf0 indicate \'93deprecated\'94 versions, 
+\b \cf2 PLEASE DON\'92T LET END-USER USE THEM
+\f1\b0 \cf0 \
+
+\f0\b \cf2 x.x.b_YYMMDDhhmm_rev
+\b0  \cf0 -> APK filename convention
+\f1 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardeftab720\partightenfactor0
+
+\f0 \cf0 	b = build (release) time
+\f1 \
+
+\f0 	YY = year 
+\f1 \
+
+\f0 	MM = month
+\f1 \
+
+\f0 	DD = day of month
+\f1 \
+
+\f0 	hh = hour of day
+\f1 \
+
+\f0 	mm = minute
+\f1 \
+
+\f0 	rev = svn revision number
+\f1 \
+
+\f0 \'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardeftab720\partightenfactor0
+
+\b \cf0 2.3.114_1706081743_24582M
+\b0 \
+- Allow app to show IP Call account and make IP Call from app\
+- Update sqlite to version 3.19.2\
+- [MapEngine]\
+	- Change map data folder\
+	- Fix bug : "Download Maps" Menu not work\
+	- Remove booking menu but keep booking.com information for hotel object\
+	- Remove traffic information\
+	- Make Uber module work\
+- [Form Engine updates]\
+	- Support new widget to verify email\
+	- Remake \'93image album\'94 widget, with more simple syntax and basic UI/UX\
+	- Allow to disable moving to previous screen in collect and form-setting\
+	- Support form's instance submission with a token\
+	- Improve UI of video player\
+	- Improve UI of dialog text popup\
+	- Support html tag "linkto"\
+	- Fix bugs:\
+		- Bugs \'931screen\'94 repeat group mechanism\
+		- boxtag/tagging-search cannot do fuzzy search with startswith condition\
+		- Bug: search widgets cannot update and show result when type search string too fast\
+		- Bug: app display white line at bottom of the screen in immersive-fullscreen mode. Resolved conflict with RTAKeyboard\
+		- Bug: data unexpected change even when tapping back button to exit text-popup\
+		- Bug of text-popup\
+\
+
+\b 2.3.113_1706011928_24444M
+\b0 \
+- [New] New map engine in system module (MAP module)\
+- [Form Engine updates]\
+	- Upgrade \'93ODK Collect\'94 Core from version 1.5.1 to 1.7.0\
+	- Skip form validating when create new form\'92s instance process\
+	- Support lazy loading for Facebook verification function\
+	- Menu bar items will follow form or app setting\
+	- Fix bugs:\
+		- App crashes when click on camera\'92s button many times\
+		- Issue about html for search v2 and tagging v1\
+		- Issue make answer lost in tagging\
+		- Fix inline Image UI\
+		- Dropdown list not display for tagging widget\
+		- Fix issue of \'93create repeat\'94 widget\
+		- Fix bug of thermal printer interactive widget, avoid crash when code dimension is too small\
+\
+
+\b 2.3.112_1705251751_24312M
+\b0 \
+- [rtMessaging] \
+	- Support create new message in sharing dialog\
+	- Fix bug of sharing and forwarding a message\
+- [Form Engine updates]\
+	- Support new appearance for repeat (add-new-repeat, remove-repeat-current, remove-repeat-last)\
+	- Update icon alignment method of inline widgets\
+	- Implement Fuzzy search feature for boxtag/tagging-choice-one/multiple/autocomplete widget\
+	- Add search v2 parallel\
+	- Fix bugs:\
+		- App does not reload search data when user reselect answer\
+		- Bug about answer data saving of \'93audio_call-record\'94 appearance\
+		- Tagging appearance displays incorrectly\
+		- Bugs of required and constraint questions\
+		- Fix bug App crashes when inputting only "-" or "." characters. Allow show '.' and '-' characters in number keyboard in thousandsep appearance\
+		- Fix bug textpopup thousandsep and digisep return wrong value\
+\
+
+\b 2.3.111_1705221703_24244M
+\b0 \
+- Display IP Call PSTN number in User profile screen. Update process of IP Call receiving.\
+- Fix bug of the download content button in custom module does not compatible with android pre-lollipop\
+- Form Engine updates:\
+	- Make screen dimming affect only at form-level\
+	- Update workflow for thermal printer interactive widget: remember the last paired device\
+	- Avoid app crashing when review image of "album_image" question\
+	- Fix bugs:\
+		- UI bugs in Camera\
+		- Bugs of previous/next button in form-settings\
+		- Bugs of repeat group in 1 screen\
+		- Bug of \'93check all\'94 appearance\
+		- Bug of search-autocomplete v2\
+		- UI bug of \'91tagging\'92\
+		- App crashes  in RatingBoxMultiWidget\
+		- App crashes after switch to rtKeyboard\
+\
+
+\b 2.3.110_1705181623_24200M
+\b0 \
+- Fix icon of common search engine layout\
+- Update passcode updating workflow, allow removing and set a new passcode number\
+- Support automatically use app's main domain (registered domain) in Data Setting file, using DOT (.) character\
+- Fix bug of app crashed when user click to notification tab after app started\
+- Add ability to receive IP call\
+- Form Engine updates:\
+	- Upgrade thermal printer widget, support raw text printing and improve speed of QR Code printing\
+	- Support newline symbol (\\n) in concat() function (calculation)\
+	- Support Facebook verification widget\
+	- Allow text popup thousandsep to enter ".". Fix bug crash app when user input "-" and "." characters from numeric keyboard\
+	- Support show numberic keyboard instead of QWERTY keyboard in text-thousandsep\
+	- Support new mechanism to get image list of HTML	\
+	- Support proper, lower and upper for string widget\
+	- Fix bugs:\
+		- Bug of \'93+\'94 button for repeat 1 screen\
+		- Bug about app displays the options at Exit popup incorrectly\
+		- Spinner Widget not working with readonly\
+		- Bug App deletes answer although cancelling the Clear-action\
+		- Bug Labels of language lost or displays incorrectly in form\
+		- Blank media files of the instance are listing and showing in file explorer.\
+		- App crashes when executing long-press show remove dialog and swipe to another screen at the same time\
+		- Fix bug of Select-One-Tagging widget\
+\
+
+\b 2.3.109_1705111854_24078M
+\b0 \
+- Support "file" object in rtHome and rtWork app\'92s module\
+- Update the style of the tab bar on rtMessaging room details screen\
+- Hide local contacts of PEOPLE tab in rtMessaging search screen\
+- Remove the bad message "listening for events" on notification place\
+- Improve loading of Agenda (Notification) screen\
+- Fix bug of Agenda/Notification screen does not auto update when data changed\
+- Fix UI bug of Camera\
+- Fix UI bug of Update Passcode screen\
+- Form Engine updates:\
+	- Support add, remove, revalidate for repeat count\
+	- Support pulling user information from "app-api"\
+	- Update icons of required & constraint questions\
+	- Implement Fuzzy-string-search and improve performance for: select (one/multiple)-(boxtag/tagging,..)-search widgets\
+	- Fix bugs:\
+		- Display wrong option in Exit dialog (Review mode)\
+		- Resolve bug of "autopull" appearance in Review mode\
+		- Fix bug repeat count for relevant\
+		- Fix bug image color for rating box widget\
+\
+
+\b 2.3.108_1705041251_23839M
+\b0 \
+- Fix bug make notification list sorting from oldest - newest\
+- Upgrade rtMessaging module to Riot v0.6.9\
+- Form Engine updates:\
+	- Support new printer:thermal widget\
+	- Support show rtKeyboard for Report Issue feature\
+	- Show Qwerty keyboard in textpopup dialog when combining digisep appearance and type is text\
+	- Check and create INDEX for local database file, when create it\
+	- Fix bugs:\
+		- App crashes when using app at Admin profile on Android 6 device\
+		- Form Camera cause app crash when edit saved form\
+		- App automatically fill data at Title of Quicknote popup\
+		- Avoid changing "instanceid" value in core record at beginning of form entry\
+		- Fix issue about percent of image\
+		- App crashes when input only '-' or '.'  in textpopup\
+		- Some bug UI of the camera\
+
+\b \
+2.3.107_1704280808_23753M\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardeftab720\partightenfactor0
+
+\b0 \cf0 - [New] IP Call infrastructure, get rid of the old library\
+- Form Engine updates:\
+	- Upgrade ODK collect from v1.4.15 to v1.5.1 to fix some bugs and improve app performance\
+	- Fix bugs:\
+		- Issue of new Constraint and Required checking\
+		- Missing update color for html tag\
+		- User cannot play the recorded audio inline\
+		- Issue of relevant for integer, decimal type\
+		- Crash when user combined barcode floating, SaveFinalizedNew and autosend\
+		- Bug in_call dialog do not display when making a call and fix speaker do not work in some cases\
+		- Fix Grid-layout error without have 0 col\
+		- Fix tagging search v2 not save value answer\
+		- Fix HTML TAG size of image and fix crash of select multi widget\
+		- Bug in Combo widget
+\b \
+\
+2.2.106_1704211829_23678M
+\b0 \
+- Disable rageshake on rtMessaging's bug reporting\
+- Form Engine updates:\
+	- Add translation for dialog change font size\
+	- Improve UI of error dialog\
+	- Support upper, lower and proper appearance for text widget\
+	- Fix bugs:\
+		- Fix issue crash when have text nolabel appearance.\
+		- Bug of required & constraint questions\
+		- The black image displays after user chooses invalid format is video instead of image
+\b \
+\
+2.2.105_1704201900_23656M
+\b0 \
+- Improve cloud data loading mechanism at beginning of form entry\
+- Form Engine updates:\
+	- Support change color for choice of select one / multiple widget.\
+	- Display the uuid postfix in instance name for form-instances which is followed-up to supervisor account\
+	- Update color for selection one/mul tagging | boxtag.\
+	- Make up UI of required & constraint questions\
+	- Make up UI of dialogs on rtSurvey\
+	- Make up Prev/Next button in form settings\
+	- Fix bugs:\
+		- Issue about pull multiple db feature\
+		- Issue of repeat UI\
+		- Issue when remove instance data directories in Android 4.4\
+		- ID-badge scan cannot scan when the widget already have answer for DateTime Widget\
+		- Catch exception that cause app to crash when parsing invalid Date/Time data\
+		- Crash app with syntax: "back_camera thumbnail-round-100" and \'93front_camera thumbnail-round-100\'94\
+		- Bugs of album video widget
+\b \
+\
+2.2.104_1704131844_23541M
+\b0 \
+- Add uuid counter to RCM cmd, allow server to indicate the counter for follow-up and return instance\
+- Fix IP Call issue when change to other user\
+- Update standard code list\
+- Improve cloud data loading mechanism at beginning of form entry, for more stable and faster (in \'93append\'94 mode)\
+- Form Engine updates:\
+	- Support show video title and video size for normal video widget\
+	- Update Camera module\
+	- Add function: validate answer for current screen\
+	- Support repeat 1 screen with relevant\
+	- Support scale image by percent\
+	- Add flag "endform" for search cache function with keep-until-[flags]\
+	- Make up UI of required & constraint questions \
+	- Improve UI of Request to Edit function\
+	- Fix bug: \
+		- Textpopup - The Qwerty keyboard displays instead of number keyboard when combining with thousandsep appearance\
+		- The answer does not align to center when align_answer is center appearance\
+		- Bug on pre-screen button widget\
+		- Some issues about click event on \'91showalbum\'92 widget\
+		- One black line appears below the button in the popup of time and date\
+		- Grid layout error\
+		- Date Widget - The  app shows the unnecessary popup\
+		- Questions has text-popup appearance can edit and delete when reviewing form\
+		- Issue about link form preload\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardeftab720\partightenfactor0
+
+\b \cf0 2.2.103_1704071853_23439M
+\b0 \
+- Add uuid counter to RCM cmd, allow server to indicate the counter for follow-up and return instance\
+- Form Engine updates:\
+	- Implement IDBadge Scan\
+	- Remove trash data files in Cloud data loading process, avoid wasting storage and bug when retry from failure later\
+	- Add feature which allow end-user change font size of form.\
+	- Change appearance from "year-range" to "y_range" for Inline-1line datetime widgets\
+	- Avoid showing the media files of form and instance in System Gallery\
+	- Update function get constraint by questions in current screen\
+	- Improve UI of Form\'92s Dialogs\
+	- Apply date-time pattern before display answer to TOC to match with data in form\
+	- Support record the call when user cancel the call, or the recipient reject the call. Fix bug the phone record audio call even with "no-record" appearance\
+	- Clear the cached data when remove response after Link form, to show the current date/time in picker not the old data\
+	- Fix wrong date format for time data.\
+	- Fix bug: App crashes when using rtkeyboard to answer question which has textpopup appearance and integer or decimal\
+	- Fix bug of app crashes when accessing a NULL field in the database for search-autocomplete-noedit-v2\
+	- Fix some issues about  search-near widget\
+	- Fix issue when choose video\
+	- Fix issue when choose image\
+	- Fix bugs The app is crashing when replacing the answer in datetime-inline widgets. Make constrain f range of hour of day\
+\
+
+\b 2.2.102_1703301716_23348M\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardeftab720\partightenfactor0
+
+\b0 \cf0 - Improve mechanism of cloud data file loading (from DM), support append mode and cross site loading\
+- Support Calendar view\
+- Support report new version app after upgrade from old version to new version\
+- Keep 'option' param for "uploading resource file to server" process, when app retry to upload after failed.\
+- Fix "setSpan ends beyond length exception" that cause crash app when delete in digisep textpopup\
+- Form Engine updates:\
+	- Make up the new started screen of form filling (Welcome screen)\
+	- New appearance of Video album: `show album` with `start-video` and `endstop`\
+	- Improve Camera UI \
+	- Improve thousandsep in text field when combining with textpopup\
+	- Support new appearance (distance) for year range at 1line datetime picker. Set default year range in the last and next 10 years from the current year.\
+	- Update appearance year-range, instead of distance for Inline-1line datetime widgets\
+	- Enable EndSurveyWidget button and hide floating barcode capture service in ReviewForm mode to allow user to review form normally\
+	- Improve search cache function : keep-until-[question] and default-cached\
+	- Fix bug : Minimal in  gridformat does not show full content when reviewing form and app crash when display tooltip\
+	- Fix bug at prompt list screen, Title of header display incorrect as title set in form.\
+	- Fix bug: camera widgets cause crash app when select and upload picture\
+	- Fix bug: \'94setSpan ends beyond length exception" that cause crash app when delete in digisep textpopup\
+	- Fix bug textpopup show keyboard and allow user to edit and delete even when reviewing form\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardeftab720\partightenfactor0
+
+\b \cf0 2.1.101_1703231913_23252M
+\b0 \
+- Add empty screen art for many screen\
+- Fix bug make follow instance to supervisor not working\
+- Fix bug of crashing while scrolling notification list\
+- Fix bugs of rtMessaging:\
+	- Not show log-in screen of Riot\
+	- Login issues
+\f1 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardeftab720\partightenfactor0
+
+\f0 \cf0 - Form Engine updates:\
+	- Update device of instance in XML file, when return or supervisor resolve from QA Offline\
+	- Improve UI of Search-autocomplete-noedit()/Search-autocomplete-noedit-v2()/minimal widget to show full content when reviewing form\
+	- Support app setting to disable "remove answer/remove repeat group" feature when long press
+\f1 \
+
+\f0 	- Fix bug text's color of CheckBox.\
+	- Fix mini-log issues:\
+		- Not record mini-log in review form (read only mode)\
+		- Make mini-log record [Open form] log each time the form is opened for editing\
+		- Bug make form may crash when review\
+	- Fix the record audio name of CallRecordWidget to support upload media audio file to server\
+	- Fix bug: App does not display default data until refreshing screen for question which has appearances including default and textpopup\
+	- Fix bug: Hour picker display does not match time lable when review time.\
+	- Fix bug: User can delete the answer when fill form with readonly\
+	- Fix bug : IPCall - App can make the call when user does not permit usage access for app.\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardeftab720\partightenfactor0
+
+\b \cf0 2.1.100_1703161852_23171M
+\f1\b0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardeftab720\partightenfactor0
+
+\f0 \cf0 - Update passcode changing UI\
+- Remove old rtMessaging, add new rtMessaging system based upon Riot chat
+\f1 \
+
+\f0 - Form Engine updates:
+\f1 \
+
+\f0 	- Build up new pattern of date/time/datetime inline appearance\
+	- Set video widget, note activity, inline video widget using open camera\
+	- Improve UI of Search-autocomplete-noedit()/Search-autocomplete-noedit-v2()/minimal widget to show full content when reviewing form\
+	- Support boxtag/tagging v2 for select_multiple\
+	- Update syntax for show album widget (circle -> round)\
+	- Check the current repeat level to avoid skipping all the repeat item until end, in case of a repeat group contain "1screen" repeat\
+	- Fix issue make form create 1 redundant and useless records in localdb for each form-instance\
+	- Fix bug and improve fullscreen mode\
+	- Fix bug : App displays keyboard after deleting answer for question which has search-autocomplete appearance\
+	- Fix issue some device with android lower than 5 can not call when have a valid SIM\
+	- Fix bug :  The available image is not displayed after choosing at annotating question\
+	- Fix bug :  Textpopup does work with readonly mode\
+	- Fix bug :  Selected text color code display incorrect\
+	- Fix bug :  Text color display incorrect when user uncheck don't know button. (CustomDateWIdgetV2)\
+	- Fix bug make instance of locked form not visible after sync process\
+	- Fix bug which make mini-log repeat group become visible after system language is changed
+\b \
+\
+2.0.99_1703091821_23050M
+\f1\b0 \
+
+\f0 - Update workflow for "follow-up instance" feature. More compatible with new updates from form management on server-side
+\f1 \
+
+\f0 - Form Engine updates:
+\f1 \
+
+\f0 	- Implement Android-TOC/FirstPage/FinalPage buttons
+\f1 \
+
+\f0 	- Improve Location Search : set center map, disable when review form\
+	- Update form settings with \'93show_final_screen\'94
+\f1 \
+
+\f0 	- Fix bug make app exits filling form screen automatically after user permits some permissions
+\f1 \
+
+\f0 	- Fix some issue: with onlyjpg or nojpg in inline image, hide the small image icon (beside the camera icon)\
+	- Fix some issue about text popup with digisep
+\b \
+\
+2.0.98_1703061527_23006M
+\f1\b0 \
+
+\f0 - Fix bug crash when appearance is \'93autosend\'94
+\f1 \
+
+\f0 - Fix bug crash of combo widget.
+\f1 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardeftab720\partightenfactor0
+
+\f0\b \cf0 \
+2.0.97_1703031830_22970M
+\f1\b0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardeftab720\partightenfactor0
+
+\f0 \cf0 - Fix critical bug of \'93date time\'94 widgets, lead to app crashing.
+\f1 \
+
+\f0 - Support get focus mode for camera with device is supported
+\f1 \
+
+\f0 - Fix bug boxtag/tagging-choices-noshow search box appear black when input many character on Samsung device with Android 4.4
+\f1 \
+
+\f0 - Fix bug : App does not save default data for the question which has appearances including default and text popup
+\f1 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardeftab720\partightenfactor0
+
+\f0\b \cf2 2.0.96_1703022043_22956M
+\f1\b0 \cf0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardeftab720\partightenfactor0
+
+\f0 \cf0 - Update SQLCipher library
+\f1 \
+
+\f0 - Improve "Data Model API updating" at begin of form, for checking MD5 more accuracy
+\f1 \
+
+\f0 - Fix bug of new "return instance" mechanism - make instance cannot be opened
+\f1 \
+
+\f0 - Form Engine updates:
+\f1 \
+
+\f0 	- Update new combo widget appearance syntax. Old syntax won\'92t work anymore.
+\f1 \
+
+\f0 	- Improve immersive fullscreen mode
+\f1 \
+
+\f0 	- Show alert message before the sms dialog shown or when make a call on devices have no SIM
+\f1 \
+
+\f0 	- Support detect if device is capable of calling and messaging with some device that have no SIM but still recognize signal
+\f1 \
+
+\f0 	- Update preview size of barcode-widget to get the best barcode preview size
+\f1 \
+
+\f0 	- Support digisep for textpopup integer, decimal
+\f1 \
+
+\f0 	- Support \'93location search\'94 widget
+\f1 \
+
+\f0 	- Support \'93date time\'94 widgets with color
+\f1 \
+
+\f0 	- Force close keyboard and hide unused button in popup when review form
+\f1 \
+
+\f0 	- Fix bugs of \'93display-title\'94 widget.
+\f1 \
+
+\f0 	- Fix bug of "1screen" repeat:
+\f1 \
+
+\f0 		- when the "1screen" group haven't any other questions, the screen will skip
+\f1 \
+
+\f0 		- the add-new-button not show when the repeat is the first in the "1screen" group
+\f1 \
+
+\f0 	- Fix bug audio-call_record not working
+\f1 \
+
+\f0 	- Fix bugs of \'93date time\'94 widgets.
+\f1 \
+
+\f0 	- Fix bug Geotrace can't record automation a new point
+\f1 \
+
+\f0 	- Fix bug make the answer of \'93signature\'94 widget can not remove
+\f1 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardeftab720\partightenfactor0
+
+\f0\b \cf0 \
+2.0.95_1702231721_22861M
+\f1\b0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardeftab720\partightenfactor0
+
+\f0 \cf0 - Update display name of rtCPMS (Real-Time CPMS) flavor to rtWork (Real-Time Workspace)
+\f1 \
+
+\f0 - Fix error of duplicated forms when instance-returning cmd is sent before user sign in
+\f1 \
+
+\f0 - Fix error of the collect-setting, then auto-send-with wifi or network will send even the instances which are sent "request to edit permission" to server
+\f1 \
+
+\f0 - Form Engine updates:
+\f1 \
+
+\f0 	- Don't display pause icon when audio media is missing.
+\f1 \
+
+\f0 	- Solve issue of row index in "1screen repeat group" grid. Then \'931screen repeat\'94 group can have many lines
+\f1 \
+
+\f0 	- Update local db update mechanism for more accuracy:
+\f1 \
+
+\f0 		+ local db will be update before view rendering
+\f1 \
+
+\f0 		+ the 'status_last' column of repeat-table will be updated as core-table
+\f1 \
+
+\f0 	- Support hold the call even when user press multitask or home button. Fix bug crash app when exit form
+\f1 \
+
+\f0 	- Fix bug clean answer for SearchAutoCompleteWidgetV2
+\f1 \
+
+\f0 	- Fix bug app crash when call, support call and send SMS to switchbroad number and show alert messages when call or send SMS on device that has no SIM or the signal has been lost.
+\f1 \
+
+\f0 	- Fix issue IPCall auto add call log and can not re-dial when input wrong number
+\f1 \
+
+\f0 	- Fix popup can not scroll while reviewing instance at ReviewForm screen
+\f1 \
+
+\f0 	- Fix many issues of fullscreen mode (immersive mode)
+\f1 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardeftab720\partightenfactor0
+
+\f0\b \cf0 	
+\b0 - Fix issue of \'91date-time\'92 widget
+\f1 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardeftab720\partightenfactor0
+
+\f0 \cf0 	- Fix bug app crash when link form with preloaded linked data
+\f1 \
+
+\f0 \
+\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97
+\f1 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardeftab720\partightenfactor0
+
+\f0\b \cf0 rtCPMS -> rtWork
+\f1\b0 \
+
+\f0\b Below this line, app name is rtCPMS
+\f1\b0 \
+
+\f0\b Above this line, app name is changed to rtWork
+\f1\b0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardeftab720\partightenfactor0
+
+\f0 \cf0 \'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97
+\f1 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardeftab720\partightenfactor0
+
+\f0\b \cf0 \
+2.0.94_1702161612_22808M
+\f1\b0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardeftab720\partightenfactor0
+
+\f0 \cf0 - Upgrade  Camera feature (open camera) to version 1.36.2.
+\f1 \
+
+\f0 - Fix many bug of Note editor function
+\f1 \
+
+\f0 - Fix bug of notification/task sync process, make the updated time of notification/task is wrong
+\f1 \
+
+\f0 - Upgrade 'return instance' mechanism. The submitted instance can be download before, if it isn't exist.
+\f1 \
+
+\f0 - Communication feature (chat):
+\f1 \
+
+\f0 	- Fix bug of crashing while user post some not well-known extension file
+\f1 \
+
+\f0 	- Fix bug which make the uploaded image did not appear on chat interface (thumbnail)
+\f1 \
+
+\f0 	- Fix bug which make user could not upload video.
+\f1 \
+
+\f0 - Form Engine updates:
+\f1 \
+
+\f0 	- Update IP Call widget - Add authentication
+\f1 \
+
+\f0 	- Disable editing when review the image widget with thumbnail
+\f1 \
+
+\f0 	- Disable switch-camera button when camera mode is specified by appearance
+\f1 \
+
+\f0 	- Support HTML for Selection one and multiple tagging.
+\f1 \
+
+\f0 	- Improve image widget with thumbnail 2in1, compress image when save instance
+\f1 \
+
+\f0 	- Support show navigation-down button when enable "navigation_swipe_up_down_left_right" function
+\f1 \
+
+\f0 	- Fix bugs of \'91select multiple with top N\'92
+\f1 \
+
+\f0 	- Fix error of minilog-repeat, when apply on a form which has a [Save + New] button
+\f1 \
+
+\f0 	- Fix issue front camera forced to display in aspect ratio but not full screen
+\f1 \
+
+\f0 	- Fix issue of popup while reviewing instance at Review Form screen
+\f1 \
+
+\f0 	- Fix bug of IP Call widget.
+\f1 \
+
+\f0 	- Fix issue of pressing home/multitask button while showing popup during filling contents process at Fill Form Screen
+\f1 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardeftab720\partightenfactor0
+
+\f0\b \cf0 	
+\b0 - Fix issue of \'91date-time\'92 widget
+\f1 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardeftab720\partightenfactor0
+
+\f0 \cf0 	- Fix bug GeoTrace and GeoShape when get data
+\f1 \
+
+\f0 	- Fix issues of main content layout are overlapped when activate immersive mode-full screen while filling Forms
+\f1 \
+
+\f0 	- Fix some issues about \'93digisep\'94 of integer type
+\f1 \
+
+\f0 	- Fix issue \'93audio media not found\'94 and support play/pause in AudioButton
+\f1 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardeftab720\partightenfactor0
+
+\f0\b \cf0 \
+2.0.93_1702091825_22691M
+\f1\b0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardeftab720\partightenfactor0
+
+\f0 \cf0 - Fix bug of "pull/push resource file from/to server" mechanism
+\f1 \
+
+\f0 - Form Engine updates:
+\f1 \
+
+\f0 	- Improve 2in1 image widget when load large quantity
+\f1 \
+
+\f0 	- Update to support html tag in label for \'91calculate\'92 and \'91more-less\'92 widget
+\f1 \
+
+\f0 	- Support thumbnail for image album.
+\f1 \
+
+\f0 	- Improve local database mechanism, for resolve and prevent issues of incorrect 'status_last' column
+\f1 \
+
+\f0 	- Fix issue of \'91date-time\'92 widget.
+\f1 \
+
+\f0 	- Fix crash form of RatingBarWidget
+\f1 \
+
+\f0 	- Fix bug which make 'autosend' keyword won't work
+\f1 \
+
+\f0 	- Fix bug IP call.
+\f1 \
+
+\f0 	- Fix bug inline select widget.
+\f1 \
+
+\f0 	- Fix bug don't know value of Select one hide for Integer and decimal.
+\f1 \
+
+\f0 	- Prevent the add new repeat button visible in "Review form" mode
+\f1 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardeftab720\partightenfactor0
+
+\f0\b \cf0 \
+2.0.92_1702031821_22629M
+\f1\b0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardeftab720\partightenfactor0
+
+\f0 \cf0 - Fix the bug lead to app crashing when open the detail instances on a group instance.
+\f1 \
+
+\f0 - Support form family on Notification/Task actions.
+\f1 \
+
+\f0 - Fix bug user cannot search member on chat room (on "Invite from identifier" menu)
+\f1 \
+
+\f0 - Form Engine updates:
+\f1 \
+
+\f0 	- Support click on answer of simple select one and select multiple answer.
+\f1 \
+
+\f0 	- Fix some issues about \'91inline image\'92 widget
+\f1 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardeftab720\partightenfactor0
+
+\f0\b \cf2 2.0.91_1702031252_22605M
+\f1\b0 \cf0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardeftab720\partightenfactor0
+
+\f0 \cf0 - Form Engine updates:
+\f1 \
+
+\f0 	- Update code-logic to support parentheses in function \'91calculate widget\'92.
+\f1 \
+
+\f0 	- Upgrade Image Album with thumbnail.
+\f1 \
+
+\f0 	- Fix bug of \'91search\'92 function and refactor code.
+\f1 \
+
+\f0 	- Fix bug with appearance \'91inline-2in1-thumbnail\'92
+\f1 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardeftab720\partightenfactor0
+
+\f0\b \cf0 \
+2.0.90_1701251505_22571M
+\f1\b0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardeftab720\partightenfactor0
+
+\f0 \cf0 - Improve Document screen: add search and sort function.
+\f1 \
+
+\f0 - Fix many issues on Note Editor.
+\f1 \
+
+\f0 - Form Engine updates:
+\f1 \
+
+\f0 	- Support clickable hint.
+\f1 \
+
+\f0 	- Fix bugs of form loading and saving.
+\f1 \
+
+\f0 	- Fix bugs of \'91datetime\'92 widget
+\f1 \
+
+\f0 	- Fix bugs of \'91select multiple with top N\'92
+\f1 \
+
+\f0 	- Fix bug make app crash when press \'91back\'92 button in video recoding.
+\f1 \
+
+\f0 	- Fix bug of \'91star_rating\'92 widget
+\f1 \
+
+\f0 	- Fix error when have 2in1 inline image widget
+\f1 \
+
+\f0 	- Fix issue of \'91validate_form\'92 settings in form level settings.
+\f1 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardeftab720\partightenfactor0
+
+\f0\b \cf0 \
+2.0.89_1701201746_22477M
+\f1\b0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardeftab720\partightenfactor0
+
+\f0 \cf0 - Improve push-pull resource file mechanism from (to) device.
+\f1 \
+
+\f0 - Improve local database file syncing, upgrade or create local database after successfully downloaded form.
+\f1 \
+
+\f0 - Fix bug of user\'92s error report.
+\f1 \
+
+\f0 - Form Engine updates:
+\f1 \
+
+\f0 	- Support thumbnail for \'91map\'92 widgets.
+\f1 \
+
+\f0 	- Support inline video thumbnail. Not support circle border.
+\f1 \
+
+\f0 	- Support multi-color for \'91multi-language\'92, \'91calculate button\'92, \'91more-less\'92 widgets.
+\f1 \
+
+\f0 	- Support new \'91calculate\'92 button.
+\f1 \
+
+\f0 	- Support \'91image album\'92 with thumbnail.
+\f1 \
+
+\f0 	- Improve form loading speed for a group with many heavy images.
+\f1 \
+
+\f0 	- Fix UI bugs of \'91tagging\'92 and \'91boxtag\'92
+\f1 \
+
+\f0 	- Fix bug of \'91datetime\'92 widget, \'91dontknow\'92 button
+\f1 \
+
+\f0 	- Fix bug of \'91star rating\'92.
+\f1 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardeftab720\partightenfactor0
+
+\f0\b \cf0 \
+2.0.88_1701181310_22391M
+\f1\b0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardeftab720\partightenfactor0
+
+\f0 \cf0 - Form Engine updates:
+\f1 \
+
+\f0 	- Improve Local database file updating mechanism. Updating happen immediately and faster.
+\f1 \
+
+\f0 	- Update necessary changes form ODK 1.14.12
+\f1 \
+
+\f0 	- Update icon for barcode widget.
+\f1 \
+
+\f0 	- Support \'91more/less\'92 widget and \'91show/hide answer\'92 for repeat group
+\f1 \
+
+\f0 	- Improve \'91image\'92 widgets with thumbnail
+\f1 \
+
+\f0 	- Fix bug of \'91datetime\'92 widget, \'91dontknow\'92 button
+\f1 \
+
+\f0 	- Fix bug of \'91select multiple with top N\'92
+\f1 \
+
+\f0 	- Fix UI bugs of \'91tagging\'92 and \'91boxtag\'92
+\f1 \
+
+\f0 	- Fix bug of \'91link form with preload data\'92 function.
+\f1 \
+
+\f0 	- Fix bug of \'91form title\'92 widget.
+\f1 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardeftab720\partightenfactor0
+
+\f0\b \cf0 \
+2.0.87_1701122057_22272M
+\f1\b0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardeftab720\partightenfactor0
+
+\f0 \cf0 - Fix bug make R-Report cannot reload to get new content dynamically.
+\f1 \
+
+\f0 - Update get-configuration service to get Custom Chat API server host.
+\f1 \
+
+\f0 - Upgrade Matrix API.
+\f1 \
+
+\f0 - Form Engine updates:
+\f1 \
+
+\f0 	- Support display red asterisk for required questions.
+\f1 \
+
+\f0 	- Support \'93check all\'94 appearance for \'93select multiple\'94 widgets.
+\f1 \
+
+\f0 	- Improve performance of form screen loading.
+\f1 \
+
+\f0 	- Support \'91minimal\'92 appearance to show HTML.
+\f1 \
+
+\f0 	- Support Image widget with circle, rectangle thumbnail.
+\f1 \
+
+\f0 	- Support \'91click to label\'92
+\f1 \
+
+\f0 	- Update \'91pull\'92 function for multiple data files.
+\f1 \
+
+\f0 	- Fix bug of multiline text widget.
+\f1 \
+
+\f0 	- Fix bug of \'93tagging-fill\'94 appearance.
+\f1 \
+
+\f0 	- Fix issues of form-level settings.
+\f1 \
+
+\f0 	- Fix bug of \'91dont know\'92 button on \'91datetime\'92 widget.
+\f1 \
+
+\f0 	- Fix bug make Call cannot stop when stop app.
+\f1 \
+
+\f0 	- Fix bug make DM data downloading unstable when internet is interrupted.
+\f1 \
+
+\f0 	- Fix bug make app crash on \'91select multiple\'92 widget.
+\f1 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardeftab720\partightenfactor0
+
+\f0\b \cf0  
+\f1\b0 \
+
+\f0\b \
+2.0.86_1701051436_22157M
+\f1\b0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardeftab720\partightenfactor0
+
+\f0 \cf0 - Improve the error message content of form (instance) submission.
+\f1 \
+
+\f0 - Update \'91get-configuration\'92 service, to get more information, and get by username instead of \'91device\'92.
+\f1 \
+
+\f0 - Fix bug lead to app crashing when \'93return\'94 and \'93follow-up\'94 instance many time.
+\f1 \
+
+\f0 - Fix bug of QA-data submission follow the form (instance) data.
+\f1 \
+
+\f0 - Fix "disable auto screen-off" settings issues
+\f1 \
+
+\f0 - Form Engine updates:
+\f1 \
+
+\f0 	- Support new Title widget.
+\f1 \
+
+\f0 	- Support color setting for \'91date time\'92 widget appearance.
+\f1 \
+
+\f0 	- Fix bug of GeoShape, GeoTrace, GeoPoint.
+\f1 \
+
+\f0 	- Fix bug of \'93star rating\'94 widget.
+\f1 \
+
+\f0 	- Fix bug of \'93datetime\'94 widget.
+\f1 \
+
+\f0 	- Fix bug about UI of \'91signature\'92 widget on small-screen devices.
+\f1 \
+
+\f0 	- Fix bug of \'91link form button\'92 with preload data.
+\f1 \
+
+\f0 	- Fix bug make sub-section cannot load data, on prompt list (form hierarchy)
+\f1 \
+
+\f0 	- Fix bug of \'91digisep\'92 appearance.
+\f1 \
+
+\f0 	- Fix bug about UI of \'91select one\'92 and \'91select multiple\'92 with \'91tagging\'92.
+\f1 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardeftab720\partightenfactor0
+
+\f0\b \cf0 \
+2.0.85_1612292028_22044
+\f1\b0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardeftab720\partightenfactor0
+
+\f0 \cf0 - Form Engine updates:
+\f1 \
+
+\f0 	- Support \'93multiple line\'94 appearance for \'93text widget\'94
+\f1 \
+
+\f0 	- Support HTML for \'93hint\'94
+\f1 \
+
+\f0 	- Improve \'93end-stop\'94 appearance of \'93audio widget\'94
+\f1 \
+
+\f0 	- Support customize label and multi-language of \'93form button\'94.
+\f1 \
+
+\f0 	- Support \'93search multiple db\'94 for \'93autocomplete v2\'94
+\f1 \
+
+\f0 	- Fix bug of \'93Image widget\'94
+\f1 \
+
+\f0 	- Fix bug of \'93geo shape, geo trace, geo point\'94 widget in some odd devices.
+\f1 \
+
+\f0 	- Fix bug of \'93search multiple db\'94 function.
+\f1 \
+
+\f0 	- Fix bug in \'93signature\'94 widget.
+\f1 \
+
+\f0 	- Fix bug of IP Call widget.
+\f1 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardeftab720\partightenfactor0
+
+\f0\b \cf0 \
+2.0.84_1612261408_21947
+\f1\b0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardeftab720\partightenfactor0
+
+\f0 \cf0 - Add \'93project code\'94 into [System] tab, at User profile screen.
+\f1 \
+
+\f0 - Form Engine updates:
+\f1 \
+
+\f0 	- Update image of Video record widget preview.
+\f1 \
+
+\f0 	- Fix bug about \'93order by\'94 of \'93search\'94 function (raw query).
+\f1 \
+
+\f0 	- Fix bug \'93visible\'94 of Image widget.
+\f1 \
+
+\f0 	- Fix bug of \'93get color\'94 function.
+\f1 \
+
+\f0 	- Fix bug \'93link form with preload data\'94.
+\f1 \
+
+\f0 	- Fix many bugs of \'93tagging\'94 UI
+\f1 \
+
+\f0 	- Fix bug in form saving and new blank form creating.
+\f1 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardeftab720\partightenfactor0
+
+\f0\b \cf0 \
+2.0.83_1612221851_21897
+\f1\b0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardeftab720\partightenfactor0
+
+\f0 \cf0 - Add Global search function - support for app-module searching.
+\f1 \
+
+\f0 - Form Engine updates:
+\f1 \
+
+\f0 	- Support new \'93mini log\'94 mechanism (log as repeat group).
+\f1 \
+
+\f0 	- Support \'93multiple select\'94 with \'93top N\'94.
+\f1 \
+
+\f0 	- Add \'93don\'92t know\'94 button for \'93Date widget v2\'94
+\f1 \
+
+\f0 	- Update new icon for \'93record video\'94 button.
+\f1 \
+
+\f0 	- Fix bugs on \'93search\'94 function.
+\f1 \
+
+\f0 	- Fix UI bugs of IP Call UI.
+\f1 \
+
+\f0 	- Fix bug of \'93check all multiple\'94
+\f1 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardeftab720\partightenfactor0
+
+\f0\b \cf0 \
+2.0.82_1612161833
+\f1\b0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardeftab720\partightenfactor0
+
+\f0 \cf0 - Add progress bar for QA Offline Returning screen
+\f1 \
+
+\f0 - Resolve critical Form Engine bugs:
+\f1 \
+
+\f0 	- in \'93autocomplete\'94 widget.
+\f1 \
+
+\f0 	- in \'93default\'94 appearance
+\f1 \
+
+\f0 	- many minor bugs.
+\f1 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardeftab720\partightenfactor0
+
+\f0\b \cf2 2.0.81_1612161021
+\f1\b0 \cf0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardeftab720\partightenfactor0
+
+\f0 \cf0 - Fix critical bugs in Form Engine - make \'93rating box\'94 and \'93search-autocomplete\'94 widgets work incorrectly.
+\f1 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardeftab720\partightenfactor0
+
+\f0\b \cf2 2.0.80_1612152150
+\f1\b0 \cf0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardeftab720\partightenfactor0
+
+\f0 \cf0 - Form Engine updates:
+\f1 \
+
+\f0 	- Fix bug gravity of Grid Layout and update RatingBarWidget layout.
+\f1 \
+
+\f0 	- Fix UI issues of Form Engine:
+\f1 \
+
+\f0 		- for Image, Label, Audio, Date, Date Time, Time
+\f1 \
+
+\f0 		- for IP Call widget, make normal call of device cannot work.
+\f1 \
+
+\f0 	- Fix bug of Constraint dialog.
+\f1 \
+
+\f0 	- Fix bugs of \'93default\'94 on \'93select one minimal\'94 widget.
+\f1 \
+
+\f0 	- Fix bugs of \'93search\'94 function on multiple data files.
+\f1 \
+
+\f0 	- Fix bugs of Album widget.
+\f1 \
+
+\f0 	- Support \'93cache table\'94 for \'93search\'94 function.
+\f1 \
+
+\f0 	- Update search autocomplete function to display value columns follow \'93AS\'94 in query
+\f1 \
+
+\f0 	- Support \'93link form\'94 function with preload data.
+\f1 \
+
+\f0 - Fix search problems of Chat, Documents, Send Form screens.
+\f1 \
+
+\f0 - Support [Documents] system module
+\f1 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardeftab720\partightenfactor0
+
+\f0\b \cf0 \
+2.0.79_1612081844
+\f1\b0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardeftab720\partightenfactor0
+
+\f0 \cf0 - Fix bug of search function on QA Offline screens.
+\f1 \
+
+\f0 - Updates on Form Engine:
+\f1 \
+
+\f0 	- Fix bug of \'93audio recording\'94 widgets.
+\f1 \
+
+\f0 	- Fix bug in Data model data source on cloud downloading features.
+\f1 \
+
+\f0 	- Fix UI bugs of Spinner and Date widgets.
+\f1 \
+
+\f0 	- Support image thumbnail (new appearance)
+\f1 \
+
+\f0 	- Support horizontal appearance
+\f1 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardeftab720\partightenfactor0
+
+\f0\b \cf0 \
+2.0.78_1612051741
+\f1\b0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardeftab720\partightenfactor0
+
+\f0 \cf0 - Fix critical bug about unicode search on \'93autocomplete\'94 widget.
+\f1 \
+
+\f0 - Fix issues of \'93refresh-button\'94 and repeat-group data saving.
+\f1 \
+
+\f0 - Fix Rating bar color issues.
+\f1 \
+
+\f0 - Fix bug of \'93pull data\'94 function, then end-user cannot reopen instance to edit.
+\f1 \
+
+\f0 - Fix bugs of QA Review dialog and QA Task status saving.
+\f1 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardeftab720\partightenfactor0
+
+\f0\b \cf0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardeftab720\partightenfactor0
+\cf2 2.0.77_1612011750
+\f1\b0 \cf0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardeftab720\partightenfactor0
+
+\f0 \cf0 - [New] Support load data source (db file) from cloud at the begin of form entry (data provided by Data Model feature).
+\f1 \
+
+\f0 - QA review status (complete/incomplete) will save together with form saving. If user exit form entry without saving changes, the changing of QA review task will be revert too.
+\f1 \
+
+\f0 - Resolve UI problems of:
+\f1 \
+
+\f0 	- Notification list.
+\f1 \
+
+\f0 	- Toggling of \'93Send form\'94 list.
+\f1 \
+
+\f0 	- Bug make title bar disappear in Android 4.4 device, on \'93Fill Form\'94 and Report list.
+\f1 \
+
+\f0 	- Issue of tabs in Document and \'93Review form\'94 screen.
+\f1 \
+
+\f0 - Updates on Form Engine:
+\f1 \
+
+\f0 	- [New] Support new \'93slider rating\'94 widget.
+\f1 \
+
+\f0 	- Fix bug which make Quick Note cannot show keyboard.
+\f1 \
+
+\f0 	- Fix bugs of local database file updating.
+\f1 \
+
+\f0 	- Fix bugs of \'93choices filter\'94.
+\f1 \
+
+\f0 	- Fix bugs lead to app crashing left the audio record question blank and save form, form has \'93audio-start\'94 flag.
+\f1 \
+
+\f0 	- Check permission on Android 6 for SMS widget.
+\f1 \
+
+\f0 	- Fix UI issues of \'93tagging\'94 and \'93boxtax\'94.
+\f1 \
+
+\f0 	- Fix UI issues of \'93star rating\'94 and \'93rating box\'94.
+\f1 \
+
+\f0 	- Fix UI issues of \'93audio\'94 recording widget.
+\f1 \
+
+\f0 	- Fix UI issues of \'93grid layout\'94.
+\f1 \
+
+\f0 	- Resolve the problems make image data of \'93combo\'94 widget cannot be saved.
+\f1 \
+
+\f0 	- Upgrade search/pull function on multi-db files for more stable.	
+\f1 \
+
+\f0 	- Upgrade \'93getcolor()\'94 function for more stable	
+\f1 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardeftab720\partightenfactor0
+
+\f0\b \cf0 \
+2.0.76_1611241847
+\f1\b0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardeftab720\partightenfactor0
+
+\f0 \cf0 - Improve Instance data sync, more relate data will be synced together with instance data (QA review, request to edit, instance status changes). Many bugs are also fixed.
+\f1 \
+
+\f0 - Updates on Form Engine:
+\f1 \
+
+\f0 	- Fix bug lead to app crashing when use \'93select_multiple\'94 widget + \'93search()\'94 functions.
+\f1 \
+
+\f0 	- Fix bug on color of some widgets.
+\f1 \
+
+\f0 	- Make Normal call and SMS widget can work correctly.
+\f1 \
+
+\f0 	- Fix bugs lead to incorrectly working on \'93search()\'94 functions.
+\f1 \
+
+\f0 	- Fix bugs of \'93autocomplete\'94 widget.
+\f1 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardeftab720\partightenfactor0
+
+\f0\b \cf0 \
+2.0.75_1611171746
+\f1\b0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardeftab720\partightenfactor0
+
+\f0 \cf0 - Support Dynamic background image in title panel, follow the server settings.
+\f1 \
+
+\f0 - Fix bug of Auto QA mechanism.
+\f1 \
+
+\f0 - Fix bug of Local database sync function.
+\f1 \
+
+\f0 - Fix minor bugs in Notification List screen.
+\f1 \
+
+\f0 - Updates on Form Engine:
+\f1 \
+
+\f0 	- Support floating audio recording for normal audio record question.
+\f1 \
+
+\f0 	- Support constraints dialog
+\f1 \
+
+\f0 	- Update UI of GeoShape and GeoTrace result.
+\f1 \
+
+\f0 	- Update \'93autopull\'94 and \'93defaultvalue\'94 appearance handling.
+\f1 \
+
+\f0 	- Fix \'93search\'94 appearance bug
+\f1 \
+
+\f0 	- Fix bug on Barcode capture.
+\f1 \
+
+\f0 	- Fix bug make hint text appear before label text.
+\f1 \
+
+\f0 	- Fix bug of background recording from beginning of the Form entry.
+\f1 \
+
+\f0 	- Fix bug of audio recording in Quick Note
+\f1 \
+
+\f0 	- Fix bug of Call widgets (IP Call, Normal call, SMS)
+\f1 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardeftab720\partightenfactor0
+
+\f0\b \cf0 \
+2.0.74_1611101853
+\f1\b0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardeftab720\partightenfactor0
+
+\f0 \cf0 - Fix critical bug in previous version, make app crash on upgrade app version process.
+\f1 \
+
+\f0 - More stable local database sync process.
+\f1 \
+
+\f0 - Support Drag and Drop Modules in Home tab.
+\f1 \
+\pard\pardeftab720\partightenfactor0
+
+\f0 \cf0 - Enhanced UI of notification screen, fix bugs of notification screen when user click to the actions.
+\f1 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardeftab720\partightenfactor0
+
+\f0 \cf0 - Avoid editing complete instances in QA Online result dialog and rtHelper.
+\f1 \
+
+\f0 - Update Form Engine:
+\f1 \
+
+\f0 	- New GeoShape and GeoTrace widget.
+\f1 \
+
+\f0 	- Fix bugs on FE widgets.
+\f1 \
+
+\f0 - And many minor bugs are fixed.
+\f1 \
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardeftab720\partightenfactor0
+
+\f0\b \cf2 2.0.73_1611031934
+\f1\b0 \cf0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardeftab720\partightenfactor0
+
+\f0 \cf0 - Update local db sync.
+\f1 \
+
+\f0 - Support html hint comments.
+\f1 \
+
+\f0 - Mirage notification and task reminder.
+\f1 \
+
+\f0 - Move init jobs on Splash screen into Asyntask.
+\f1 \
+
+\f0 - Update ODK version 1.4.11
+\f1 \
+
+\f0 - Many bugs fixed:
+\f1 \
+\pard\tx2006\tx2573\tx3140\tx3707\tx4274\tx4841\tx5408\tx5975\tx6542\tx7109\tx7676\tx8243\pardeftab720\li720\ri-12\partightenfactor0
+
+\f0 \cf0 - Floating barcode on first time
+\f1 \
+
+\f0 - Image of Tagging widget.
+\f1 \
+
+\f0 - Warning dialog of AutoQA
+\f1 \
+
+\f0 - Converter(Calculator) support Vietnamese.
+\f1 \
+
+\f0 - Crash on notification.
+\f1 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardeftab720\partightenfactor0
+
+\f0\b \cf0 \
+2.0.72_1610271826
+\f1\b0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardeftab720\partightenfactor0
+
+\f0 \cf0 - Update \'93retry\'94 mechanism for Instance Sync process after deactivation.
+\f1 \
+
+\f0 - Support Combo widget.
+\f1 \
+
+\f0 - Many bugs fixed from previous version:
+\f1 \
+
+\f0 	- Bug on Date-time widget
+\f1 \
+
+\f0 	- Floating calculator and converter
+\f1 \
+
+\f0 	- Note Editor UI
+\f1 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardeftab720\partightenfactor0
+
+\f0\b \cf0 \
+2.0.71_1610201808
+\f1\b0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardeftab720\partightenfactor0
+
+\f0 \cf0 - [New] Instance list UI update, with many configuration on the title bar.
+\f1 \
+
+\f0 - Update the register mechanism, for compatible with new Matrix mechanism (Use SS-system password).
+\f1 \
+
+\f0 - All forms in same family will be deleted whenever execute \'93delete form\'94 command.
+\f1 \
+
+\f0 - Many bugs fixed from previous version:
+\f1 \
+
+\f0 	- Floating calculator and converter
+\f1 \
+
+\f0 	- Note Editor UI
+\f1 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardeftab720\partightenfactor0
+
+\f0\b \cf0 \
+2.0.70_1610171443 
+\b0 -> Fix bugs in Form Engine.
+\f1 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardeftab720\partightenfactor0
+
+\f0\b \cf2 2.0.69_1610152350\cf0  
+\b0 -> Fix critical bugs of 2.0.68
+\f1 \
+
+\f0\b \cf2 2.0.68_1610141820
+\f1\b0 \cf0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardeftab720\partightenfactor0
+
+\f0 \cf0 - [New] Support Instance sync function (basic).
+\f1 \
+
+\f0 - [Update] New Floating Calculator and Converter UI and logic.
+\f1 \
+
+\f0 - Many updates on Form Engine.
+\f1 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardeftab720\partightenfactor0
+
+\f0\b \cf0 	
+\b0 - Fix bug about form question focusable.
+\f1 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardeftab720\partightenfactor0
+
+\f0 \cf0 	- Support Combo widget.
+\f1 \
+
+\f0 	- Fix bug of Autocomplete.
+\f1 \
+
+\f0 	- Fix UI of widget bugs.
+\f1 \
+
+\f0 - Many bugs fixed from previous version.
+\f1 \
+
+\f0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardeftab720\partightenfactor0
+
+\b \cf0 2.0.67_1610111012
+\f1\b0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardeftab720\partightenfactor0
+
+\f0 \cf0 - Many updates on Form Engine.
+\f1 \
+
+\f0 - Many bugs fixed from previous version.
+\f1 \
+
+\f0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardeftab720\partightenfactor0
+
+\b \cf0 2.0.66_1610051804
+\f1\b0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardeftab720\partightenfactor0
+
+\f0 \cf0 - New Note editor which support HTML content.
+\f1 \
+
+\f0 - Many updates on Form Engine:
+\f1 \
+
+\f0 	- Search autocomplete can search in many .db files.
+\f1 \
+
+\f0 	- Update activity log mechanism.
+\f1 \
+
+\f0 - Many bugs fixed from previous version.
+\f1 \
+
+\f0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardeftab720\partightenfactor0
+
+\b \cf0 2.0.65_1609291859
+\f1\b0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardeftab720\partightenfactor0
+
+\f0 \cf0 - New UI with Business Module.
+\f1 \
+
+\f0 - New Floating Calculator UI.
+\f1 \
+
+\f0 - Many updates on Form Engine. 
+\f1 \
+
+\f0 	- Update Raw Query function
+\f1 \
+
+\f0 	- Auto-pull
+\f1 \
+
+\f0 	- Bug in audio and video record
+\f1 \
+
+\f0 	- Support Album widget
+\f1 \
+
+\f0 - Many bugs fixed from previous version.
+\f1 \
+
+\f0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardeftab720\partightenfactor0
+
+\b \cf0 1.2.64_1609221751
+\f1\b0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardeftab720\partightenfactor0
+
+\f0 \cf0 - Report can be pinned to main menu.
+\f1 \
+
+\f0 - New QA Offline workflow
+\f1 \
+
+\f0 - Many updates on Form Engine. 
+\f1 \
+
+\f0 	- Update IP Call function.
+\f1 \
+
+\f0 	- Support Raw Query.
+\f1 \
+
+\f0 	- Support \'93link form\'94.
+\f1 \
+
+\f0 	- Support API for get screen information.
+\f1 \
+
+\f0 - Many bugs fixed from previous version.
+\f1 \
+
+\f0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardeftab720\partightenfactor0
+
+\b \cf0 1.1.63_1609131720
+\f1\b0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardeftab720\partightenfactor0
+
+\f0 \cf0 - Update IP Call widget in Form Engine.
+\f1 \
+
+\f0 - Many bugs fixed from previous version.
+\f1 \
+
+\f0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardeftab720\partightenfactor0
+
+\b \cf0 1.1.62_1609071906
+\f1\b0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardeftab720\partightenfactor0
+
+\f0 \cf0 - New UI for rtHelper and Form Entry\'92s Quick Note, and Map.
+\f1 \
+
+\f0 - New IP Call widget support on Form Engine
+\f1 \
+
+\f0 - Many bugs fixed from previous version.
+\f1 \
+
+\f0 - Many updates on Form Engine. 
+\f1 \
+
+\f0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardeftab720\partightenfactor0
+
+\b \cf0 1.1.61_1608311747
+\f1\b0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardeftab720\partightenfactor0
+
+\f0 \cf0 Fix bugs from 1.1.60:
+\f1 \
+
+\f0 - Cannot be installed together with other rtApps
+\f1 \
+
+\f0 - Crash app bugs happen on device run Android OS below 5.1
+\f1 \
+
+\f0 - UI of Form Entry widgets
+\f1 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardeftab720\partightenfactor0
+
+\f0\b \cf2 1.1.60_1608311117
+\f1\b0 \cf0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardeftab720\partightenfactor0
+
+\f0 \cf0 - New UI for Instance list (at [Send Form], [Edit Form], \'85)
+\f1 \
+
+\f0 - Replace GCM with FCM (new Cloud messaging mechanism of Google).
+\f1 \
+
+\f0 - Update UI of QA Review (in Form Entry).
+\f1 \
+
+\f0 - Support Document/Files sync
+\f1 \
+
+\f0 - Many bugs fixed from previous version.
+\f1 \
+
+\f0 - Many updates on Form Engine. 
+\f1 \
+
+\f0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardeftab720\partightenfactor0
+
+\b \cf0 1.0.59_1608111827
+\f1\b0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardeftab720\partightenfactor0
+
+\f0 \cf0 - Support auto-update to newest RCM mechanism without registration (when upgrade from version <58)
+\f1 \
+
+\f0 - Many bugs fixed from previous version.
+\f1 \
+
+\f0 - Many updates on Form Engine. 
+\f1 \
+
+\f0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardeftab720\partightenfactor0
+
+\b \cf0 1.0.58_1608091822
+\f1\b0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardeftab720\partightenfactor0
+
+\f0 \cf0 - New Registration mechanism, big update on RCM checking mechanism
+\f1 \
+
+\f0 - Many update on UI/UX (Registration, Deactivate device, Prompt list)
+\f1 \
+
+\f0 - Support Environment Settings
+\f1 \
+
+\f0 - Add \'93Request to Edit\'94 function.
+\f1 \
+
+\f0 - Add rtHelper
+\f1 \
+
+\f0 - Many bugs fixed from previous version.
+\f1 \
+
+\f0 - Many updates on Form Engine.
+\f1 \
+
+\f0 \
+\
+\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97
+\f1 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardeftab720\partightenfactor0
+
+\f0\b \cf0 BETA 
+\f1\b0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardeftab720\partightenfactor0
+
+\f0\b \cf2 red text
+\b0  \cf0 indicate \'93deprecated\'94 version
+\f1 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardeftab720\partightenfactor0
+
+\f0 \cf0 \'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97
+\f1 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardeftab720\partightenfactor0
+
+\f0 \cf2 \
+
+\b 0.3.57_13072016
+\f1\b0 \cf0 \
+
+\f0 \cf2 - Improve Google Play Service checking.
+\f1 \cf0 \
+
+\f0 \cf2 - Many bugs fixed from previous version.
+\f1 \cf0 \
+
+\f0 \cf2 - Many updates on Form Engine.
+\f1 \cf0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardeftab720\partightenfactor0
+
+\f0 \cf0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardeftab720\partightenfactor0
+
+\b \cf0 0.3.56_11072016
+\f1\b0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardeftab720\partightenfactor0
+
+\f0 \cf0 - Many bug fixed from previous version.
+\f1 \
+
+\f0 - Remind the number of Instances which didn\'92t pass Auto QA Checking.
+\f1 \
+
+\f0 - Many updates on UI components.
+\f1 \
+
+\f0 - Many updates on Form Engine.
+\f1 \
+
+\f0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardeftab720\partightenfactor0
+
+\b \cf0 0.3.55_19062016
+\f1\b0 \
+
+\f0\b 0.3.54_17062016
+\f1\b0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardeftab720\partightenfactor0
+
+\f0 \cf0 - Many bug fixed from previous version.
+\f1 \
+
+\f0 - Many updates on UI components.
+\f1 \
+
+\f0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardeftab720\partightenfactor0
+
+\b \cf0 0.3.53_27052016
+\f1\b0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardeftab720\partightenfactor0
+
+\f0 \cf0 - Form shortcut function.
+\f1 \
+
+\f0 - Many bug fixed from previous version.
+\f1 \
+
+\f0 - Many updates on UI components.
+\f1 \
+
+\f0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardeftab720\partightenfactor0
+
+\b \cf0 0.3.52_24052016
+\f1\b0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardeftab720\partightenfactor0
+
+\f0 \cf0 - Many bug fixed from previous version.
+\f1 \
+
+\f0 - Many updates on UI components.
+\f1 \
+
+\f0 - Updates on Form Entry Engine
+\f1 \
+
+\f0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardeftab720\partightenfactor0
+
+\b \cf2 0.3.51_14052016
+\f1\b0 \cf0 \
+
+\f0 \cf2 - New registration flow, with rtcenter.org
+\f1 \cf0 \
+
+\f0 \cf2 - Many bug fixed from previous version.
+\f1 \cf0 \
+
+\f0 \cf2 - Many updates on UI components.
+\f1 \cf0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardeftab720\partightenfactor0
+
+\f0 \cf0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardeftab720\partightenfactor0
+
+\b \cf2 0.3.48_25042016
+\f1\b0 \cf0 \
+
+\f0 \cf2 - Many bug fixed from previous version.
+\f1 \cf0 \
+
+\f0 \cf2 - Complete applying OKHttp3 library.
+\f1 \cf0 \
+
+\f0 \cf2 - Many updates on UI components.
+\f1 \cf0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardeftab720\partightenfactor0
+
+\f0 \cf0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardeftab720\partightenfactor0
+
+\b \cf2 0.3.47_13042016
+\f1\b0 \cf0 \
+
+\f0 \cf2 - Many bug fixed from previous version.
+\f1 \cf0 \
+
+\f0 \cf2 - Apply OKHttp3 library for downstream connections.
+\f1 \cf0 \
+
+\f0 \cf2 - Update UI theme.
+\f1 \cf0 \
+
+\f0 \cf2 - Support Notification and Task syncing.
+\f1 \cf0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardeftab720\partightenfactor0
+
+\f0 \cf0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardeftab720\partightenfactor0
+
+\b \cf2 0.3.46_08042016
+\f1\b0 \cf0 \
+
+\f0 \cf2 - Many bug fixed from previous version.
+\f1 \cf0 \
+
+\f0 \cf2 - Support both HTTP and HTTPS connection.
+\f1 \cf0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardeftab720\partightenfactor0
+
+\f0 \cf0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardeftab720\partightenfactor0
+
+\b \cf0 0.3.45_06042016
+\f1\b0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardeftab720\partightenfactor0
+
+\f0 \cf0 - Many bug fixed from previous version.
+\f1 \
+
+\f0 - Update Communication module.
+\f1 \
+
+\f0 - New mechanism: Automatically download assigned forms.
+\f1 \
+
+\f0 - More stable in GCM ping and RCM timer checker method.
+\f1 \
+
+\f0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardeftab720\partightenfactor0
+
+\b \cf0 0.3.44_310322016
+\f1\b0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardeftab720\partightenfactor0
+
+\f0 \cf0 - Many bug fixed from previous version.
+\f1 \
+
+\f0 - Upgrade Communication module.
+\f1 \
+
+\f0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardeftab720\partightenfactor0
+
+\b \cf0 0.3.43_250322016
+\f1\b0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardeftab720\partightenfactor0
+
+\f0 \cf0 - Many bug fixed from previous version.
+\f1 \
+
+\f0 - Compatible with Android M.
+\f1 \
+
+\f0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardeftab720\partightenfactor0
+
+\b \cf0 0.3.42_210322016
+\f1\b0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardeftab720\partightenfactor0
+
+\f0 \cf0 - Many bug fixed from previous version.
+\f1 \
+
+\f0 - More compatible with Android M (this upgrade is not complete yet).
+\f1 \
+
+\f0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardeftab720\partightenfactor0
+
+\b \cf2 0.3.41_170322016
+\f1\b0 \cf0 \
+
+\f0 \cf2 - Many bug fixed from previous version.
+\f1 \cf0 \
+
+\f0 \cf2 - More compatible with Android M (this upgrade is not complete yet).
+\f1 \cf0 \
+
+\f0 \cf2 \
+
+\b 0.3.40_140322016
+\f1\b0 \cf0 \
+
+\f0 \cf2 - Apply new mechanism to check RCM Command (GCM ping).
+\f1 \cf0 \
+
+\f0 \cf2 - Many bug fixed from previous version.
+\f1 \cf0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardeftab720\partightenfactor0
+
+\f0 \cf0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardeftab720\partightenfactor0
+
+\b \cf0 0.2.39_090322016
+\f1\b0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardeftab720\partightenfactor0
+
+\f0 \cf0 - Many bug fixed from previous version.
+\f1 \
+
+\f0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardeftab720\partightenfactor0
+
+\b \cf2 0.2.38_080322016
+\f1\b0 \cf0 \
+
+\f0 \cf2 - Minor update for compatible with Android 6
+\f1 \cf0 \
+
+\f0 \cf2 - Many bug fixed from previous version.
+\f1 \cf0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardeftab720\partightenfactor0
+
+\f0 \cf0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardeftab720\partightenfactor0
+
+\b \cf0 0.2.37_040322016
+\f1\b0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardeftab720\partightenfactor0
+
+\f0 \cf0 - Support Assigned R-Report sync.
+\f1 \
+
+\f0 - Improve Internet Availability checking functionality.
+\f1 \
+
+\f0 - Many bug fixed from previous version.
+\f1 \
+
+\f0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardeftab720\partightenfactor0
+
+\b \cf0 0.2.36_020322016
+\f1\b0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardeftab720\partightenfactor0
+
+\f0 \cf0 - New function: Internet Availability checking.
+\f1 \
+
+\f0 - Many updates in RS modules.
+\f1 \
+
+\f0 - Many bug fixed from previous version.
+\f1 \
+
+\f0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardeftab720\partightenfactor0
+
+\b \cf0 0.2.35_240222016
+\f1\b0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardeftab720\partightenfactor0
+
+\f0 \cf0 - New function: User\'92s note sync.
+\f1 \
+
+\f0 - Fix bug: username isn\'92t case-sensitive now.
+\f1 \
+
+\f0 - Fix bug: report RCM CMD status mechanism.
+\f1 \
+
+\f0 - Update Communication (Chat) function.
+\f1 \
+
+\f0 - Many updates in RS modules.
+\f1 \
+
+\f0 - Fix many minor bugs in previous version.
+\f1 \
+
+\f0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardeftab720\partightenfactor0
+
+\b \cf0 0.2.34_04022016
+\f1\b0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardeftab720\partightenfactor0
+
+\f0 \cf0 - Support change matrix avatar on staff info screen.
+\f1 \
+
+\f0 - Support Form Family\'92s media sync (both ad-hoc update and download form mechanism).
+\f1 \
+
+\f0 - Update external form resource file structure: staff.db (add \'93username\'94 column).
+\f1 \
+
+\f0 - Add new form widget, fix bugs on RS Module.
+\f1 \
+
+\f0 - Fix bugs on previous version.
+\f1 \
+
+\f0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardeftab720\partightenfactor0
+
+\b \cf2 0.2.33_29012016
+\f1\b0 \cf0 \
+
+\f0 \cf2 - Update function show message sending instance when save and send finalise instances.
+\f1 \cf0 \
+
+\f0\b \cf2 0.2.32_29012016 (merged with 0.2.33)
+\f1\b0 \cf0 \
+
+\f0 \cf2 - Fix bug: make app won\'92t exit after receive \'93unassign user\'94 (either main user or secondary user).
+\f1 \cf0 \
+
+\f0 \cf2 - Fix bugs on \'93Fill Form\'94 screen.
+\f1 \cf0 \
+
+\f0 \cf2 - Update new library for SQLCipher.
+\f1 \cf0 \
+
+\f0 \cf2 - Fix bug on Tasks/Notification actions (error in fadata.db structure).
+\f1 \cf0 \
+
+\f0 \cf2 - Update Matrix Communication UI:
+\f1 \cf0 \
+\pard\pardeftab720\li469\fi-10\ri-12\partightenfactor0
+
+\f0 \cf2 1. Room list member presence avatars
+\f1 \cf0 \
+
+\f0 \cf2 2. Group default icon square to circle
+\f1 \cf0 \
+
+\f0 \cf2 3. Fix wrong text of member name changing notices (just hide it)
+\f1 \cf0 \
+
+\f0 \cf2 4. Fix conversation scrolling bugs
+\f1 \cf0 \
+
+\f0 \cf2 5. Hide public rooms have 0 user (it will cause unknown error when join it)
+\f1 \cf0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardeftab720\partightenfactor0
+
+\f0 \cf2 - Support print bar code widget in form. (to the thermal portable printer)
+\f1 \cf0 \
+
+\f0 \cf2 - Fix minor bugs in previous version.
+\f1 \cf0 \
+
+\f0 \cf2 \
+
+\b 0.2.31_25012016
+\f1\b0 \cf0 \
+
+\f0 \cf2 - Fix bug in \'93exit app\'94 mechanism, make app to crash.
+\f1 \cf0 \
+
+\f0 \cf2 - Update \'93unassign\'94 main user RCM Command, to define exactly user which need to unassign.
+\f1 \cf0 \
+
+\f0 \cf2 - Fix minor bugs in previous version.
+\f1 \cf0 \
+
+\f0 \cf2 \
+
+\b 0.2.30_22012016
+\f1\b0 \cf0 \
+
+\f0 \cf2 - Update \'93exit\'94 mechanism: when device has only 1 user (main), Chat service still available after exit.
+\f1 \cf0 \
+
+\f0 \cf2 - Fix bug which make form is duplicated when user is assigned a form and scan form from disk.
+\f1 \cf0 \
+
+\f0 \cf2 - Handle new RCM Command for delete R-Report by ID.
+\f1 \cf0 \
+
+\f0 \cf2 - Fix minor bugs in previous version (ALPHA v0.2.29).
+\f1 \cf0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardeftab720\partightenfactor0
+
+\f0 \cf0 \
+\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97
+\f1 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardeftab720\partightenfactor0
+
+\f0\b \cf0 ALPHA
+\f1\b0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardeftab720\partightenfactor0
+
+\f0 \cf0 \'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97
+\f1 \
+
+\f0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardeftab720\partightenfactor0
+
+\b \cf0 0.2.29_20012016
+\f1\b0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardeftab720\partightenfactor0
+
+\f0 \cf0 - Update registration mechanism, support multiple user in one device (include 1 main user and many secondary users).
+\f1 \
+
+\f0 - Update Matrix UI components.
+\f1 \
+
+\f0 - Add new form\'92s widget, fix bugs on RS module.
+\f1 \
+
+\f0 - Update: Form is locked cannot be pushed from server.
+\f1 \
+
+\f0 - Update: delete form by form ID from RCM Command -> delete all form match form ID, at all version.
+\f1 \
+
+\f0 - Fix minor bugs in previous version.
+\f1 \
+
+\f0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardeftab720\partightenfactor0
+
+\b \cf0 0.2.28_14012016
+\f1\b0 \
+
+\f0\b 0.2.27_14012016 (merged with 28)
+\f1\b0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardeftab720\partightenfactor0
+
+\f0 \cf0 - Improve Matrix Communication UI
+\f1 \
+
+\f0 - Support devices using arm64 and x86_64 instruction set.
+\f1 \
+
+\f0 - Fix many bugs in previous version.
+\f1 \
+
+\f0 - Update Vietnamese language translation.
+\f1 \
+
+\f0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardeftab720\partightenfactor0
+
+\b \cf0 0.2.26_11012016
+\f1\b0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardeftab720\partightenfactor0
+
+\f0 \cf0 - Fix bug on RS module widget - rating widget and barcode widget.
+\f1 \
+
+\f0 - Support show/hide the form which isn\'92t download yet in \'93Fill Blank Form\'94 list.
+\f1 \
+
+\f0 - Swipe (pull down) to rescan blank forms on disk.
+\f1 \
+
+\f0 - Fix minor bugs.
+\f1 \
+
+\f0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardeftab720\partightenfactor0
+
+\b \cf0 0.2.25_08012016
+\f1\b0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardeftab720\partightenfactor0
+
+\f0 \cf0 - Update Vietnamese language text.
+\f1 \
+
+\f0 - More support for instance select method (in instance list screens).
+\f1 \
+
+\f0 - Upgrade the new mechanism for TaskReminder/Notifications download and display.
+\f1 \
+
+\f0 - Fix bug on RS module.
+\f1 \
+
+\f0 - Fix minor bugs.
+\f1 \
+
+\f0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardeftab720\partightenfactor0
+
+\b \cf0 0.2.24_06012016
+\f1\b0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardeftab720\partightenfactor0
+
+\f0 \cf0 - Update ScreenSaver functionality.
+\f1 \
+
+\f0 - Update UI of Matrix.
+\f1 \
+
+\f0 - Update new mechanism for TaskReminder/Notifications download and display.
+\f1 \
+
+\f0 - Add new function to RS module: form progress, form language change.
+\f1 \
+
+\f0 - Fix NoteList item sort order (the old note of previous version should be deleted)
+\f1 \
+
+\f0 - Fix bug on RS module.
+\f1 \
+
+\f0 - Fix minor bugs.
+\f1 \
+
+\f0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardeftab720\partightenfactor0
+
+\b \cf0 0.2.23_30122015
+\f1\b0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardeftab720\partightenfactor0
+
+\f0 \cf0 - Fix bug on RS Module
+\f1 \
+
+\f0 - New widget on RS Module : Rating.
+\f1 \
+
+\f0 - Fix bug on connection service method to server.
+\f1 \
+
+\f0 - Fix bug on Matrix UI.
+\f1 \
+
+\f0 - Fix some minor UI bugs.
+\f1 \
+
+\f0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardeftab720\partightenfactor0
+
+\b \cf0 0.2.22_29122015
+\f1\b0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardeftab720\partightenfactor0
+
+\f0 \cf0 - Fix bug on RS module
+\f1 \
+
+\f0 - Fix Matrix workflow, get username and password from SS server after successfully verify credentials.
+\f1 \
+
+\f0 - Fix UI bugs, on Matrix Communication, Form and instance list, search view, \'85
+\f1 \
+
+\f0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardeftab720\partightenfactor0
+
+\b \cf0 0.2.19_28122015
+\f1\b0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardeftab720\partightenfactor0
+
+\f0 \cf0 - Fix bug on \'93Upload Resource\'94 filename.
+\f1 \
+
+\f0 - Fix the bugs on main menu item counter.
+\f1 \
+
+\f0 - Add \'93Change Avatar\'94 function on Profile screen (Offline).
+\f1 \
+
+\f0 - Notification when storage space is running out.
+\f1 \
+
+\f0 - Improve loading performance on some form/instance list.
+\f1 \
+
+\f0 - Apply new standard service code for \'93Credential Verification\'94 service.
+\f1 \
+
+\f0 - Fix bug lead to crash app on Matrix screen.
+\f1 \
+
+\f0 - Update R-Report service, add device ID as GET param.
+\f1 \
+
+\f0 - Fix minor bugs on UI, service works, \'85
+\f1 \
+
+\f0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardeftab720\partightenfactor0
+
+\b \cf0 0.2.18_23122015
+\f1\b0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardeftab720\partightenfactor0
+
+\f0 \cf0 - Smaller counter number on main menu icon, for compatible with tablet screen.
+\f1 \
+
+\f0 - Fix bugs which make the instance counter wasn\'92t updated after user come back from instance list to form selection list (in Edit Form, Send Form screens).
+\f1 \
+
+\f0 - Sync icon of items in R-Report screen and Document screen.
+\f1 \
+
+\f0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardeftab720\partightenfactor0
+
+\b \cf0 0.2.17_23122015
+\f1\b0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardeftab720\partightenfactor0
+
+\f0 \cf0 - Fix bug in form\'92s widget (Date-time picker)
+\f1 \
+
+\f0 - Fix bug \'93null pointer\'94 when get appearance (RS Module)
+\f1 \
+
+\f0 - Fix bugs in workflow of new Download Form mechanism (Download from \'93Fill form\'94 selection)
+\f1 \
+
+\f0 - New \'93Notifications\'94 and \'93Tasks\'94 screens.
+\f1 \
+
+\f0 - Support \'93Returned\'94, \'93Follow-up\'94 tab in \'93Edit Form\'94.
+\f1 \
+
+\f0 - Fix bugs in UI of \'93Edit Form\'94, \'93Documents\'94, \'93R-Report\'94, \'93Review Form\'94 screens.
+\f1 \
+
+\f0 - Fix bugs of search view on some list.
+\f1 \
+
+\f0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardeftab720\partightenfactor0
+
+\b \cf0 0.2.16_18122015
+\f1\b0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardeftab720\partightenfactor0
+
+\f0 \cf0 - Fix bug on Document screens (File and Note) when search.
+\f1 \
+
+\f0 - Add counter number of items in Main menu
+\f1 \
+
+\f0 - Fix bugs on form\'92s widget and form\'92s layout (RS module)
+\f1 \
+
+\f0 - Update Vietnamese language for Communication function.
+\f1 \
+
+\f0 - Minor updates in Matrix UI
+\f1 \
+
+\f0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardeftab720\partightenfactor0
+
+\b \cf0 0.2.14_17122015
+\f1\b0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardeftab720\partightenfactor0
+
+\f0 \cf0 - New registration process.
+\f1 \
+
+\f0 - Fix bugs on form\'92s widget and form\'92s layout (RS module)
+\f1 \
+
+\f0 - Fix bug on R-Report screen: cannot swipe-to-delete on wiki device, add search function in UI
+\f1 \
+
+\f0 - Add counter number in \'93Edit form\'94, \'93Send form\'94 and \'93Review form\'94, on item of form-selection-level.
+\f1 \
+
+\f0 - Update UI of \'93Change PIN\'94 screen.
+\f1 \
+
+\f0 - Update Main menu layout.
+\f1 \
+
+\f0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardeftab720\partightenfactor0
+
+\b \cf0 0.1.13_15122015
+\f1\b0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardeftab720\partightenfactor0
+
+\f0 \cf0 - Update the assign-unassign forms mechanism, for compatible with other functionalities
+\f1 \
+
+\f0 - Update Search UI on Document/Notes and Document/Files
+\f1 \
+
+\f0 - Fix bug on RS Module
+\f1 \
+
+\f0 - Update Vietnamese language text.
+\f1 \
+
+\f0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardeftab720\partightenfactor0
+
+\b \cf0 0.1.12_14122015
+\f1\b0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardeftab720\partightenfactor0
+
+\f0 \cf0 - Fix bug on Form Entry screen. update the icon set for form\'92s widget.
+\f1 \
+
+\f0 - Update UI on R-Report screen.
+\f1 \
+
+\f0 - Temporary hide the \'93Autosend notification\'94 display.
+\f1 \
+
+\f0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardeftab720\partightenfactor0
+
+\b \cf0 0.1.11_11122015
+\f1\b0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardeftab720\partightenfactor0
+
+\f0 \cf0 - Complete \'93Send form\'94 new UI
+\f1 \
+
+\f0 - Fix bug in RS module, to work better with a huge number of instances.
+\f1 \
+
+\f0 - Fix background bugs on RS module.
+\f1 \
+
+\f0 - Update staff.db after \'93update staff info\'94 RCM Command is received.
+\f1 \
+
+\f0 - Update language (Vietnamese)
+\f1 \
+
+\f0 - Fix bug make note cannot be edited.
+\f1 \
+
+\f0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardeftab720\partightenfactor0
+
+\b \cf0 0.1.8_10122015
+\f1\b0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardeftab720\partightenfactor0
+
+\f0 \cf0 - Move R-Report folder to /RTAanalytics/CPMSA/
+\f1 \
+
+\f0 - Update \'93Send Form\'94 screen
+\f1 \
+
+\f0 - VI-Language updates
+\f1 \
+
+\f0 - Main menu Item counters mechanism updates
+\f1 \
+
+\f0 - Support RCM Command \'93force to submit\'94 instances
+\f1 \
+
+\f0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardeftab720\partightenfactor0
+
+\b \cf0 0.1.7_08122015
+\f1\b0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardeftab720\partightenfactor0
+
+\f0 \cf0 - Update Note Editor screen
+\f1 \
+
+\f0 - Main menu item counter
+\f1 \
+
+\f0 - Staff info screen updates
+\f1 \
+
+\f0 - Update \'93Edit Form\'94 screen
+\f1 \
+
+\f0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardeftab720\partightenfactor0
+
+\b \cf0 0.1.6_08122015
+\f1\b0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardeftab720\partightenfactor0
+
+\f0 \cf0 - Independent with RS, FA, FS
+\f1 \
+
+\f0 - Update RS-module widgets
+\f1 \
+
+\f0 - Update \'93Fill Form\'94 selection screen
+\f1 \
+
+\f0 - new PDF Viewer
+\f1 \
+
+\f0 - Update UI of Main menu
+\f1 \
+
+\f0 \
+\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97
+\f1 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardeftab720\partightenfactor0
+
+\f0\b \cf0 Under construction
+\f1\b0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardeftab720\partightenfactor0
+
+\f0 \cf0 \'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97
+\f1 \
+
+\f0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardeftab720\partightenfactor0
+
+\b \cf0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardeftab720\partightenfactor0
+
+\f2\b0\fs26 \cf0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardeftab720\partightenfactor0
+
+\f0\fs24 \cf0 \
+\
+
+\f1 \
+}
